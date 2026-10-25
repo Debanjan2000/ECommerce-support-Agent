@@ -1,0 +1,517 @@
+[
+  {
+    "id": "SQL-01",
+    "type": "sql",
+    "question": "How many total support tickets are in the database?",
+    "expected_tool": "sql_tool",
+    "ground_truth_sql_result": 1000,
+    "ground_truth_doc_ids": [],
+    "ground_truth_keywords": []
+  },
+  {
+    "id": "SQL-02",
+    "type": "sql",
+    "question": "How many support tickets have issue area 'Cancellations and returns'?",
+    "expected_tool": "sql_tool",
+    "ground_truth_sql_result": 286,
+    "ground_truth_doc_ids": [],
+    "ground_truth_keywords": []
+  },
+  {
+    "id": "SQL-03",
+    "type": "sql",
+    "question": "How many support tickets have product category 'Appliances'?",
+    "expected_tool": "sql_tool",
+    "ground_truth_sql_result": 465,
+    "ground_truth_doc_ids": [],
+    "ground_truth_keywords": []
+  },
+  {
+    "id": "SQL-04",
+    "type": "sql",
+    "question": "How many support tickets have customer sentiment 'neutral'?",
+    "expected_tool": "sql_tool",
+    "ground_truth_sql_result": 552,
+    "ground_truth_doc_ids": [],
+    "ground_truth_keywords": []
+  },
+  {
+    "id": "SQL-05",
+    "type": "sql",
+    "question": "How many support tickets have issue complexity 'less'?",
+    "expected_tool": "sql_tool",
+    "ground_truth_sql_result": 488,
+    "ground_truth_doc_ids": [],
+    "ground_truth_keywords": []
+  },
+  {
+    "id": "SQL-06",
+    "type": "sql",
+    "question": "How many tickets have issue area 'Cancellations and returns' AND product category 'Appliances'?",
+    "expected_tool": "sql_tool",
+    "ground_truth_sql_result": 136,
+    "ground_truth_doc_ids": [],
+    "ground_truth_keywords": []
+  },
+  {
+    "id": "SQL-07",
+    "type": "sql",
+    "question": "How many tickets have customer sentiment 'neutral' and issue complexity 'less'?",
+    "expected_tool": "sql_tool",
+    "ground_truth_sql_result": 274,
+    "ground_truth_doc_ids": [],
+    "ground_truth_keywords": []
+  },
+  {
+    "id": "SQL-08",
+    "type": "sql",
+    "question": "What are the top 3 issue area categories by ticket count?",
+    "expected_tool": "sql_tool",
+    "ground_truth_sql_result": {
+      "Cancellations and returns": 286,
+      "Order": 270,
+      "Login and Account": 151
+    },
+    "ground_truth_doc_ids": [],
+    "ground_truth_keywords": []
+  },
+  {
+    "id": "SQL-09",
+    "type": "sql",
+    "question": "What are the top 3 product category categories by ticket count?",
+    "expected_tool": "sql_tool",
+    "ground_truth_sql_result": {
+      "Appliances": 465,
+      "Electronics": 303,
+      "Men/Women/Kids": 232
+    },
+    "ground_truth_doc_ids": [],
+    "ground_truth_keywords": []
+  },
+  {
+    "id": "SQL-10",
+    "type": "sql",
+    "question": "What are the top 3 customer sentiment categories by ticket count?",
+    "expected_tool": "sql_tool",
+    "ground_truth_sql_result": {
+      "neutral": 552,
+      "negative": 316,
+      "frustrated": 105
+    },
+    "ground_truth_doc_ids": [],
+    "ground_truth_keywords": []
+  },
+  {
+    "id": "SQL-11",
+    "type": "sql",
+    "question": "What are the top 3 issue complexity categories by ticket count?",
+    "expected_tool": "sql_tool",
+    "ground_truth_sql_result": {
+      "less": 488,
+      "medium": 426,
+      "high": 86
+    },
+    "ground_truth_doc_ids": [],
+    "ground_truth_keywords": []
+  },
+  {
+    "id": "SQL-12",
+    "type": "sql",
+    "question": "How many tickets involve the product sub-category 'Shorts'?",
+    "expected_tool": "sql_tool",
+    "ground_truth_sql_result": 28,
+    "ground_truth_doc_ids": [],
+    "ground_truth_keywords": []
+  },
+  {
+    "id": "RAG-01",
+    "type": "rag",
+    "question": "How can I access the warranty details for my Food Processor purchased from BrownBox?",
+    "expected_tool": "rag_tool",
+    "ground_truth_sql_result": null,
+    "ground_truth_doc_ids": [
+      "DOC-001"
+    ],
+    "ground_truth_keywords": [
+      "Processor",
+      "covered",
+      "under",
+      "one-year",
+      "warranty"
+    ]
+  },
+  {
+    "id": "RAG-02",
+    "type": "rag",
+    "question": "Can you guide me through the process of signing up for an extended warranty for my inverter?",
+    "expected_tool": "rag_tool",
+    "ground_truth_sql_result": null,
+    "ground_truth_doc_ids": [
+      "DOC-157"
+    ],
+    "ground_truth_keywords": [
+      "assist",
+      "signing",
+      "extended",
+      "warranty",
+      "inverter."
+    ]
+  },
+  {
+    "id": "RAG-03",
+    "type": "rag",
+    "question": "How can I change the email ID linked to my account for my Air Cooler purchase?",
+    "expected_tool": "rag_tool",
+    "ground_truth_sql_result": null,
+    "ground_truth_doc_ids": [
+      "DOC-313"
+    ],
+    "ground_truth_keywords": [
+      "change",
+      "email",
+      "account",
+      "'Account",
+      "Settings'"
+    ]
+  },
+  {
+    "id": "RAG-04",
+    "type": "rag",
+    "question": "What can I do to change the address for item pickup for a food processor I ordered?",
+    "expected_tool": "rag_tool",
+    "ground_truth_sql_result": null,
+    "ground_truth_doc_ids": [
+      "DOC-469"
+    ],
+    "ground_truth_keywords": [
+      "Rachel",
+      "assisted",
+      "customer",
+      "changing",
+      "delivery"
+    ]
+  },
+  {
+    "id": "RAG-05",
+    "type": "rag",
+    "question": "What should I do to reset the clock on the microwave oven?",
+    "expected_tool": "rag_tool",
+    "ground_truth_sql_result": null,
+    "ground_truth_doc_ids": [
+      "DOC-625"
+    ],
+    "ground_truth_keywords": [
+      "agent",
+      "explicitly",
+      "answer",
+      "question,",
+      "troubleshooting"
+    ]
+  },
+  {
+    "id": "RAG-06",
+    "type": "rag",
+    "question": "Can the agent help with delivery charges for an inverter?",
+    "expected_tool": "rag_tool",
+    "ground_truth_sql_result": null,
+    "ground_truth_doc_ids": [
+      "DOC-781"
+    ],
+    "ground_truth_keywords": [
+      "agent",
+      "provided",
+      "delivery",
+      "charges",
+      "inverter,"
+    ]
+  },
+  {
+    "id": "RAG-07",
+    "type": "rag",
+    "question": "Why was I charged for delivery on my recent headphone order?",
+    "expected_tool": "rag_tool",
+    "ground_truth_sql_result": null,
+    "ground_truth_doc_ids": [
+      "DOC-937"
+    ],
+    "ground_truth_keywords": [
+      "charged",
+      "delivery",
+      "because",
+      "headphone",
+      "ordered"
+    ]
+  },
+  {
+    "id": "RAG-08",
+    "type": "rag",
+    "question": "Has the customer checked with their neighbors or the front desk?",
+    "expected_tool": "rag_tool",
+    "ground_truth_sql_result": null,
+    "ground_truth_doc_ids": [
+      "DOC-1093"
+    ],
+    "ground_truth_keywords": [
+      "customer",
+      "checked",
+      "their",
+      "neighbors",
+      "front"
+    ]
+  },
+  {
+    "id": "RAG-09",
+    "type": "rag",
+    "question": "Will installing the tablet myself void the warranty?",
+    "expected_tool": "rag_tool",
+    "ground_truth_sql_result": null,
+    "ground_truth_doc_ids": [
+      "DOC-1249"
+    ],
+    "ground_truth_keywords": [
+      "installing",
+      "tablet",
+      "yourself",
+      "warranty.",
+      "However,"
+    ]
+  },
+  {
+    "id": "RAG-10",
+    "type": "rag",
+    "question": "What are the faster delivery options available for the new monitor and their charges?",
+    "expected_tool": "rag_tool",
+    "ground_truth_sql_result": null,
+    "ground_truth_doc_ids": [
+      "DOC-1405"
+    ],
+    "ground_truth_keywords": [
+      "faster",
+      "delivery",
+      "options",
+      "available",
+      "delivery"
+    ]
+  },
+  {
+    "id": "RAG-11",
+    "type": "rag",
+    "question": "I don't have access to the mobile number that I used to create the account, and I can't verify it. What should I do?",
+    "expected_tool": "rag_tool",
+    "ground_truth_sql_result": null,
+    "ground_truth_doc_ids": [
+      "DOC-1561"
+    ],
+    "ground_truth_keywords": [
+      "verify",
+      "mobile",
+      "number",
+      "ensure",
+      "still"
+    ]
+  },
+  {
+    "id": "RAG-12",
+    "type": "rag",
+    "question": "Can the order be expedited?",
+    "expected_tool": "rag_tool",
+    "ground_truth_sql_result": null,
+    "ground_truth_doc_ids": [
+      "DOC-1717"
+    ],
+    "ground_truth_keywords": [
+      "Unfortunately,",
+      "possible",
+      "expedite",
+      "order",
+      "time."
+    ]
+  },
+  {
+    "id": "HYB-01",
+    "type": "hybrid",
+    "question": "How many support tickets involve 'Bp Monitor' with 'Return and Exchange' issues, and what is the recommended troubleshooting procedure?",
+    "expected_tool": "sql_tool+rag_tool",
+    "ground_truth_sql_result": 5,
+    "ground_truth_doc_ids": [
+      "DOC-1337"
+    ],
+    "ground_truth_keywords": [
+      "return",
+      "faulty",
+      "monitor",
+      "receive",
+      "refund"
+    ]
+  },
+  {
+    "id": "HYB-02",
+    "type": "hybrid",
+    "question": "How many support tickets involve 'Shorts' with 'Order Delivery Issues' issues, and what is the recommended troubleshooting procedure?",
+    "expected_tool": "sql_tool+rag_tool",
+    "ground_truth_sql_result": 5,
+    "ground_truth_doc_ids": [
+      "DOC-1616"
+    ],
+    "ground_truth_keywords": [
+      "agent",
+      "expressing",
+      "well-wishing",
+      "sentiment,",
+      "hoping"
+    ]
+  },
+  {
+    "id": "HYB-03",
+    "type": "hybrid",
+    "question": "How many support tickets involve 'Air Cooler' with 'Mobile Number and Email Verification' issues, and what is the recommended troubleshooting procedure?",
+    "expected_tool": "sql_tool+rag_tool",
+    "ground_truth_sql_result": 4,
+    "ground_truth_doc_ids": [
+      "DOC-310"
+    ],
+    "ground_truth_keywords": [
+      "checked",
+      "folder",
+      "verification",
+      "hasn't",
+      "received"
+    ]
+  },
+  {
+    "id": "HYB-04",
+    "type": "hybrid",
+    "question": "How many support tickets involve 'Baby Food' with 'Order Delivery Issues' issues, and what is the recommended troubleshooting procedure?",
+    "expected_tool": "sql_tool+rag_tool",
+    "ground_truth_sql_result": 4,
+    "ground_truth_doc_ids": [
+      "DOC-1606"
+    ],
+    "ground_truth_keywords": [
+      "assist",
+      "cancelling",
+      "order,",
+      "suggest",
+      "waiting"
+    ]
+  },
+  {
+    "id": "HYB-05",
+    "type": "hybrid",
+    "question": "How many support tickets involve 'Backpack' with 'Pickup and Shipping' issues, and what is the recommended troubleshooting procedure?",
+    "expected_tool": "sql_tool+rag_tool",
+    "ground_truth_sql_result": 4,
+    "ground_truth_doc_ids": [
+      "DOC-1651"
+    ],
+    "ground_truth_keywords": [
+      "Unfortunately,",
+      "possible",
+      "change",
+      "pickup",
+      "location"
+    ]
+  },
+  {
+    "id": "HYB-06",
+    "type": "hybrid",
+    "question": "How many support tickets involve 'Backpack' with 'Return and Exchange' issues, and what is the recommended troubleshooting procedure?",
+    "expected_tool": "sql_tool+rag_tool",
+    "ground_truth_sql_result": 4,
+    "ground_truth_doc_ids": [
+      "DOC-1788"
+    ],
+    "ground_truth_keywords": [
+      "supervisor",
+      "offered",
+      "exchange",
+      "backpack",
+      "larger"
+    ]
+  },
+  {
+    "id": "HYB-07",
+    "type": "hybrid",
+    "question": "How many support tickets involve 'Coffee Maker' with 'Pickup and Shipping' issues, and what is the recommended troubleshooting procedure?",
+    "expected_tool": "sql_tool+rag_tool",
+    "ground_truth_sql_result": 4,
+    "ground_truth_doc_ids": [
+      "DOC-444"
+    ],
+    "ground_truth_keywords": [
+      "agent",
+      "checked",
+      "their",
+      "supervisor",
+      "expedited"
+    ]
+  },
+  {
+    "id": "HYB-08",
+    "type": "hybrid",
+    "question": "How many support tickets involve 'Coffee Maker' with 'Return and Exchange' issues, and what is the recommended troubleshooting procedure?",
+    "expected_tool": "sql_tool+rag_tool",
+    "ground_truth_sql_result": 4,
+    "ground_truth_doc_ids": [
+      "DOC-653"
+    ],
+    "ground_truth_keywords": [
+      "senior",
+      "agent,",
+      "representative",
+      "authority",
+      "exceptions"
+    ]
+  },
+  {
+    "id": "HYB-09",
+    "type": "hybrid",
+    "question": "How many support tickets involve 'Computer Monitor' with 'Pickup and Shipping' issues, and what is the recommended troubleshooting procedure?",
+    "expected_tool": "sql_tool+rag_tool",
+    "ground_truth_sql_result": 4,
+    "ground_truth_doc_ids": [
+      "DOC-1148"
+    ],
+    "ground_truth_keywords": [
+      "prepaid",
+      "shipping",
+      "label",
+      "email",
+      "within"
+    ]
+  },
+  {
+    "id": "HYB-10",
+    "type": "hybrid",
+    "question": "How many support tickets involve 'Electric Kettle' with 'Order Delivery Issues' issues, and what is the recommended troubleshooting procedure?",
+    "expected_tool": "sql_tool+rag_tool",
+    "ground_truth_sql_result": 4,
+    "ground_truth_doc_ids": [
+      "DOC-400"
+    ],
+    "ground_truth_keywords": [
+      "order",
+      "nearest",
+      "delivered",
+      "today.",
+      "exact"
+    ]
+  },
+  {
+    "id": "HYB-11",
+    "type": "hybrid",
+    "question": "How many support tickets involve 'Kitchen Chimney' with 'Order Delivery Issues' issues, and what is the recommended troubleshooting procedure?",
+    "expected_tool": "sql_tool+rag_tool",
+    "ground_truth_sql_result": 4,
+    "ground_truth_doc_ids": [
+      "DOC-430"
+    ],
+    "ground_truth_keywords": [
+      "After",
+      "checking",
+      "status",
+      "order,",
+      "agent"
+    ]
+  }
+]
