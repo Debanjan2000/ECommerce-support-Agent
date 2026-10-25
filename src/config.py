@@ -26,5 +26,5 @@ if not GEMINI_API_KEY:
         "Copy .env.example → .env and add your key."
     )
 
-SMALL_MODEL_ID: str = os.getenv("SMALL_MODEL_ID", "gemini-2.5-flash-lite")
-LARGE_MODEL_ID: str = os.getenv("LARGE_MODEL_ID", "gemini-2.5-flash")
+SMALL_MODEL_ID: str = os.getenv("SMALL_MODEL_ID", "gemini-3.8-flash")
+LARGE_MODEL_ID: str = os.getenv("LARGE_MODEL_ID", "gemini-3.8-flash")

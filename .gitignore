@@ -1,7 +1,6 @@
 # Environment variables and secrets
 .env
 .env.local
-.env.*
 
 # Python compilation and cache
 __pycache__/

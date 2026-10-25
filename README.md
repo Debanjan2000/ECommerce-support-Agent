@@ -1,4 +1,4 @@
-# E-commerce Support Orchestrator
+# E-commerce Support Agent
 
 A **ReAct Multi-Agent Orchestrator** that combines **Hybrid RAG** and **Secure Text-to-SQL** to answer e-commerce customer-support questions, powered by the **Google Gemini API** (`google-genai` SDK).
 
